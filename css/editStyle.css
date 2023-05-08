@@ -397,7 +397,7 @@ line {
 
 @media (max-width: 900px) {
 
-  #logo-con {
+  #logo-con, .line {
     display: none;
   }
 
