@@ -1,0 +1,200 @@
+/* All Elements Settings */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'AmarilloUSAF', sans-serif;
+}
+
+header,
+main,
+footer,
+nav,
+aside,
+section,
+article {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+#container {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  margin-top: 40px;
+  position: relative;
+  left: -1%;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.holder {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.temp {
+  z-index: -10000;
+}
+
+.dominaor {
+  position: relative;
+  height: 250px;
+  margin: 60px 0px;
+  left: 6%;
+  margin-bottom: 20px;
+}
+
+/* Dominator */
+
+body {
+  background: radial-gradient(ellipse at bottom, #aaa 40%, #555 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: 400ms;
+}
+
+.dominator {
+  filter: drop-shadow(5px 5px 0 #000) drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.2));
+}
+
+.dominator .body {
+  top: -25px;
+  left: -200px;
+  width: 420px;
+  height: 40px;
+  background: rgba(80, 170, 220, 1);
+  clip-path: polygon(0 0, 380px 0, 420px 40px, 60px 40px);
+}
+
+.dominator .barrel {
+  top: -30px;
+  left: -325px;
+  width: 345px;
+  height: 80px;
+  background: rgba(30, 30, 30, 1);
+  clip-path: polygon(15px 0, 327px 0, 346px 30px, 300px 30px, 245px 50px, 230px 35px, 20px 80px, 0 55px);
+}
+
+.dominator .grip .panel.-left {
+  width: 220px;
+  height: 220px;
+  background: rgba(30, 30, 30, 1);
+  clip-path: polygon(0 0, 21px 0, 30px 15px, 60px 15px, 100px 0, 190px 0, 220px 15px, 185px 65px, 220px 140px, 220px 190px, 130px 220px, 110px 210px, 140px 160px, 115px 100px, 0 120px, 0 110px, 80px 95px, 85px 70px, 70px 50px, 20px 50px);
+}
+
+.dominator .grip .trigger {
+  top: 40px;
+  left: 30px;
+  width: 40px;
+  height: 55px;
+  background: rgba(40, 40, 40, 1);
+  clip-path: polygon(10px 0, 25px 0, 40px 30px, 15px 55px, 25px 30px);
+}
+
+.dominator .slide {
+  top: -50px;
+  left: 15px;
+  width: 220px;
+  height: 65px;
+  background: rgba(30, 30, 30, 1);
+  clip-path: polygon(0 40px, 30px 15px, 150px 0, 190px 25px, 210px 25px, 220px 35px, 205px 65px, 165px 45px, 98px 45px, 45px 65px, 15px 65px);
+}
+
+.dominator .under {
+  transform-origin: 10px 120px;
+}
+
+.dominator .under .sensor {
+  left: -120px;
+  width: 140px;
+  height: 130px;
+  background: rgba(30, 30, 30, 1);
+  clip-path: polygon(0 70px, 40px 20px, 95px 0, 120px 0, 140px 50px, 120px 70px, 140px 110px, 110px 130px, 70px 110px, 50px 115px);
+}
+
+.dominator .under .inner {
+  top: 5px;
+  left: -305px;
+  width: 380px;
+  height: 150px;
+  background: rgba(80, 170, 220, 1);
+  clip-path: polygon(0 45px, 210px 0, 250px 40px, 300px 10px, 360px 20px, 350px 40px, 300px 30px, 280px 100px, 30px 150px);
+}
+
+.dominator .under .forend {
+  top: 5px;
+  left: -305px;
+  width: 280px;
+  height: 150px;
+  background: rgba(30, 30, 30, 1);
+  clip-path: polygon(0 45px, 210px 0, 225px 15px, 185px 65px, 235px 110px, 30px 150px);
+  transform-origin: 100px 45px;
+}
+
+.dominator:hover .under {
+  transform: rotateZ(-20deg);
+  transition-delay: 0.1s;
+}
+
+.dominator:hover .under .forend {
+  transform: rotateZ(198deg);
+}
+
+.dominator:hover .slide {
+  transform: translate(-40px, -15px);
+  transition-delay: 0.1s;
+}
+
+.dominator:hover .barrel {
+  transform: translate(-30px, -5px);
+  transition-delay: 0.1s;
+}
+
+
+@media (max-width: 800px) {
+  .holder {
+    flex-flow: column;
+    background-color: #FFFFFF;
+    padding: 0px 20px 20px 20px;
+
+  }
+
+  .dominaor {
+    display: none;
+  }
+
+  .temp>object {
+    display: none;
+  }
+}

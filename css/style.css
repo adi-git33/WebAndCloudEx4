@@ -1,0 +1,147 @@
+/* All Elements Settings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer,
+nav,
+aside,
+section,
+article {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #795cfa32;
+}
+
+label,
+.form-control,
+.form-control::placeholder,
+.passwordHelpInline,
+span,
+#subbtn,
+h1 {
+  font-family: 'Noto Sans';
+}
+
+#wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.form-con {
+  width: 760px;
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.form-con>h1 {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 24px;
+  height: fit-content;
+  margin: 10px;
+}
+
+form {
+  margin: 10px;
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 8px 0px;
+}
+
+.form-control::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.form-con>form>section {
+  margin: 14px 0px;
+}
+
+.tmpr {
+  display: flex;
+  flex-flow: column;
+}
+
+.tmpr>section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioS>input {
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.check>input {
+  color: #CCCCCC;
+}
+
+.check>div {
+  margin: 2px 0px;
+}
+
+.check>div>span,
+.check>div>label {
+  margin-left: 8px;
+  color: #343a40;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.check>div>label {
+  margin: 0px 0px;
+}
+
+#subbtn {
+  align-self: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7A5CFA;
+  padding: 14px 12px 14px 16px;
+  margin: 20px 0px;
+  border-radius: 8px;
+  border: 0px;
+  font-weight: 600;
+  font-size: 16px;
+}
