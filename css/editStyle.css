@@ -319,6 +319,7 @@ line {
   stroke: #555555;
   display: flex;
   justify-self: flex-start;
+  stroke-width: 5px;
 }
 
 .bgrd {

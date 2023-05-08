@@ -13,7 +13,7 @@
 		integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="icon" href="ss.ico">
-	<link rel="stylesheet" type="text/css" href="css/phpStyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/phpStyle.css">
 	<title>Adi Levi - Edit Product</title>
 	<!-- Fonts -->
 	<link href="https://fonts.cdnfonts.com/css/amarillo-usaf" rel="stylesheet">
@@ -61,14 +61,14 @@
 					<br>Thank you for using our site.<br>We hope we will see you again.</p>
 					</section>
 					<div class="temp">
-					<object data="tamplate.svg"></object>
+					<object data="../svg/tamplate.svg"></object>
 				</div>
 					';
 				} else {
 
 					echo '
 					<div class="temp">
-					<object data="tamplate.svg"></object>
+					<object data="../svg/tamplate.svg"></object>
 				</div>
 				<section>
 					<h1><b> Hello ' . $pos . ' ' . $nm . ', </b></h1>

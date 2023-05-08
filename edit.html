@@ -33,7 +33,7 @@
 				</div>
 			</section>
 			<section class="line">
-				<svg width="2px" height="100vh">
+				<svg width="10px" height="100vh">
 					<line x1="0" y1="0" x2="2" y2="100%">
 				</svg>
 			</section>
@@ -45,7 +45,7 @@
 						<section class="input">
 							<label>Full Name</label>
 							<input id="name" class="form-control" type="text" name="fullName" value=""
-								placeholder="Name" pattern="[A-Za-z]+\s+[A-Za-z]+" required>
+								placeholder="Name" pattern="([A-Za-z]+\s+[A-Za-z]+).{3,40}" required>
 							<div class="invalid-feedback">
 								Must contain letters and spaces only.
 							</div>
